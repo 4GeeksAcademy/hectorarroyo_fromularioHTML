@@ -7,9 +7,10 @@
   <title>Formulario HTML</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/4f8119bdc9.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bg-light">
 
 
   <div class="container py-5">
@@ -27,7 +28,7 @@
 
         <!-- Card Row -->
         <div class="row mb-3">
-          <div class="col-md-6">
+          <div class="col-md-5">
             <label class="form-label">Card #</label>
             <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
           </div>
@@ -37,7 +38,7 @@
             <input type="text" class="form-control" placeholder="0000">
           </div>
 
-          <div class="col-md-3">
+          <div class="col-md-4">
             <label class="form-label">Amount</label>
             <div class="input-group">
               <span class="input-group-text">$</span>
@@ -85,17 +86,18 @@
         <div class="row">
           <div class="col-md-6">
             <label class="form-label">We accept:</label>
-            <div class="d-flex gap-2">
-              <span class="badge bg-secondary">Visa</span>
-              <span class="badge bg-secondary">MasterCard</span>
-              <span class="badge bg-secondary">AmEx</span>
-              <span class="badge bg-secondary">Discover</span>
+            <div class="d-flex gap-4">
+              <span class="badge bg-secondary"><i class="fab fa-cc-visa"></i></span>
+              <span class="badge bg-secondary"><i class="fab fa-cc-mastercard"></i></span>
+              <span class="badge bg-secondary"><i class="fab fa-cc-amex"></i></span>
+              <span class="badge bg-secondary"><i class="fab fa-cc-discover"></i></span>
             </div>
           </div>
 
           <div class="col-md-6">
             <label class="form-label">Message</label>
-            <textarea class="form-control" rows="4" placeholder="Add any notes here."></textarea>
+            <textarea class="form-control" rows="4" placeholder=""></textarea>
+            Add any notes here.
           </div>
         </div>
 
