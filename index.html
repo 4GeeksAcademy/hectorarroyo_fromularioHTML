@@ -10,13 +10,13 @@
   <script src="https://kit.fontawesome.com/4f8119bdc9.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-light">
+<body>
 
 
   <div class="container py-5">
     <div class="card">
       <div class="card-header bg-secondary-subtle text-dark">
-        <h5 class="mb-0">Payment form example</h5>
+        <h4 class="mb-0">Payment form example</h4>
       </div>
       <div class="card-body">
 
@@ -26,85 +26,111 @@
 
         <form>
 
-        <!-- Card Row -->
-        <div class="row mb-3">
-          <div class="col-md-5">
-            <label class="form-label">Card #</label>
-            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
-          </div>
-
-          <div class="col-md-3">
-            <label class="form-label">CVC #</label>
-            <input type="text" class="form-control" placeholder="0000">
-          </div>
-
-          <div class="col-md-4">
-            <label class="form-label">Amount</label>
-            <div class="input-group">
-              <span class="input-group-text">$</span>
-              <input type="text" class="form-control" placeholder="Amount">
+          <!-- Card Row -->
+          <div class="row mb-3">
+            <div class="col-md-5">
+              <label class="form-label">Card #</label>
+              <input type="text" class="form-control border border-2 border-secondary-subtle"  placeholder="XXXXXXXXXXXXXXXX">
             </div>
-          </div>
-        </div>
 
-        <!-- Name Row -->
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label class="form-label">First Name</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Last Name</label>
-            <input type="text" class="form-control">
-          </div>
-        </div>
+            <div class="col-md-3">
+              <label class="form-label">CVC #</label>
+              <input type="text" class="form-control border border-2 border-secondary-subtle" placeholder="0000">
+            </div>
 
-        <!-- Location Row -->
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label class="form-label">City</label>
-            <input type="text" class="form-control">
-          </div>
-
-          <div class="col-md-3">
-            <label class="form-label">State</label>
-            <select class="form-select">
-              <option selected>Pick a state</option>
-              <option>California</option>
-              <option>Texas</option>
-              <option>Florida</option>
-            </select>
-          </div>
-
-          <div class="col-md-3">
-            <label class="form-label">Postal Code</label>
-            <input type="text" class="form-control">
-          </div>
-        </div>
-
-        <!-- Bottom Row -->
-        <div class="row">
-          <div class="col-md-6">
-            <label class="form-label">We accept:</label>
-            <div class="d-flex gap-4">
-              <span class="badge bg-secondary"><i class="fab fa-cc-visa"></i></span>
-              <span class="badge bg-secondary"><i class="fab fa-cc-mastercard"></i></span>
-              <span class="badge bg-secondary"><i class="fab fa-cc-amex"></i></span>
-              <span class="badge bg-secondary"><i class="fab fa-cc-discover"></i></span>
+            <div class="col-md-4">
+              <label class="form-label">Amount</label>
+              <div class="input-group">
+                <span class="input-group-text">$</span>
+                <input type="text" class="form-control border border-2 border-secondary-subtle" placeholder="Amount">
+              </div>
             </div>
           </div>
 
-          <div class="col-md-6">
-            <label class="form-label">Message</label>
-            <textarea class="form-control" rows="4" placeholder=""></textarea>
-            Add any notes here.
+          <!-- Name Row -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">First Name</label>
+              <input type="text" class="form-control border border-2 border-secondary-subtle">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Last Name</label>
+              <input type="text" class="form-control border border-2 border-secondary-subtle">
+            </div>
           </div>
-        </div>
 
-      </form>
+          <!-- Location Row -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">City</label>
+              <input type="text" class="form-control border border-2 border-secondary-subtle">
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">State</label>
+              <select class="form-select border border-2 border-secondary-subtle">
+                <option selected>Pick a state</option>
+                <option>California</option>
+                <option>Texas</option>
+                <option>Florida</option>
+              </select>
+            </div>
+
+            <div class="col-md-3">
+              <label class="form-label">Postal Code</label>
+              <input type="text" class="form-control border border-2 border-secondary-subtle">
+            </div>
+          </div>
+
+          <!-- Bottom Row -->
+          <div class="row">
+            <div class="col-md-6">
+
+              <div class="col-md-6">
+                <label class="form-label">We accept:</label>
+                <div class="bg-secondary rounded p-2 d-flex align-items-center gap-4 text-white">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cardType" id="mastercard">
+                    <label class="form-check-label" for="mastercard">
+                      <i class="fab fa-cc-mastercard fs-4"></i>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cardType" id="visa">
+                    <label class="form-check-label" for="visa">
+                      <i class="fab fa-cc-visa fs-4"></i>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cardType" id="amex">
+                    <label class="form-check-label" for="amex">
+                      <i class="fab fa-cc-amex fs-4"></i>
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="cardType" id="discover">
+                    <label class="form-check-label" for="discover">
+                      <i class="fab fa-cc-discover fs-4"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Message</label>
+              <textarea class="form-control border border-2 border-secondary-subtle" rows="4" placeholder=""></textarea>
+              Add any notes here.
+            </div>
+          </div>
+
+        </form>
 
       </div>
-      <div class="card-footer bg-secondary-subtle text-end">
+      <div class="card-footer  text-end" style="background-color: #b8bdc5dc">
         <button class="btn btn-secondary">Cancel</button>
         <button class="btn btn-primary">Send</button>
       </div>
